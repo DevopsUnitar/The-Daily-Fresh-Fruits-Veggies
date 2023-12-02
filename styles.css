@@ -1,10 +1,27 @@
 
 /* Style individual product listings within the grid */
 .product {
-    border: 1px solid #ddd; /* Add a border around each product */
+    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    height: 80px; /* Set a fixed height for the product container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.product img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* This property ensures the image covers the entire container */
+    z-index: 1;
+}
+
+.product h2,
+.product p {
+    margin: 0; /* Remove default margin for heading and paragraph */
+}
+
 
 /* Scrollable product grid */
 .product-grid {
@@ -15,7 +32,7 @@
     grid-template-columns: repeat(3, 1fr); /* Display 3 columns per row (adjust as needed) */
     
     gap: 20px; /* Add some spacing between grid items */
-    max-height: 450px; /* Adjust the height as needed */
+    max-height: auto; /* Adjust the height as needed */
     overflow-y: auto; /* Enable vertical scrolling when content overflows */
 }
 
@@ -49,7 +66,7 @@ footer {
     text-align: center;
     padding: 10px;
     /* Position the footer at the bottom of the viewport. */
-    position: fixed;
+    position: auto;
     bottom: 0;
     width: 100%; /* Make it span the full width of the viewport. */
   }
