@@ -1,0 +1,74 @@
+
+/* Style individual product listings within the grid */
+.product {
+    border: 1px solid #ddd; /* Add a border around each product */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Scrollable product grid */
+.product-grid {
+    max-width: auto; /* Adjust to fit */
+    margin: 0 auto; /* Center the grid container on the page */
+    display: grid;
+    grid-template-rows: minmax(200px, 200px) minmax(200px, 200px) minmax(200px, 200px);
+    grid-template-columns: repeat(3, 1fr); /* Display 3 columns per row (adjust as needed) */
+    
+    gap: 20px; /* Add some spacing between grid items */
+    max-height: 450px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+/* Scrollable cart section */
+#cart {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling when cart content overflows */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* Position the footer at the bottom of the viewport. */
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Make it span the full width of the viewport. */
+  }
+
+
+/* Style for the cart section */
+.cart-item {
+    position: relative;
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+/* Style for the cart message and Checkout button */
+#cart-message {
+    text-align: center;
+}
+
+#check-out-button {
+    position: relative;
+    bottom: 10px;
+    left: 50%; /* Place it at the horizontal center */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+}
