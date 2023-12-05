@@ -118,3 +118,15 @@ input[type="submit"]:hover {
     left: 50%; /* Place it at the horizontal center */
     transform: translateX(-50%); /* Adjust to center horizontally */
 }
+
+.remove-from-cart {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-from-cart:hover {
+    background-color: #cc0000;
+}
