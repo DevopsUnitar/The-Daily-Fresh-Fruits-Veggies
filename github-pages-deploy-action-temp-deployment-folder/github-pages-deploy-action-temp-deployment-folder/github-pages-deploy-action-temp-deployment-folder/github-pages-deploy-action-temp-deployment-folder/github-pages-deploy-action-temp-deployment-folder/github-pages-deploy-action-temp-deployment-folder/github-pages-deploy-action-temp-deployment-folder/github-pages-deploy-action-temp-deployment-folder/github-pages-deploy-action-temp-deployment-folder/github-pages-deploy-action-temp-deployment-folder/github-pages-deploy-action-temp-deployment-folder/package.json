@@ -1,0 +1,13 @@
+{
+    "name": "my-devops-project",
+    "version": "1.0.0",
+    "description": "A simple DevOps demo app",
+    "main": "index.js",
+    "dependencies": {},
+    "scripts": {
+      "start": "node index.js"
+    },
+    "keywords": ["devops", "node.js"],
+    "author": "Your Name",
+    "license": "MIT"
+  }  
